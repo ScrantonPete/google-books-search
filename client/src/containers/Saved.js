@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import API from "../utils/API";
 
-class Save extends Component {
+class Saved extends Component {
   state = {
     bookList: []
   };

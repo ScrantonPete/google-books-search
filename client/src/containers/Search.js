@@ -73,7 +73,7 @@ class Search extends Component {
           <div className="row">
             {/* form section */}
             <div className="col-12 col-sm-6 col-md-3">
-              <h3>Search For Book</h3>
+              <h3>Search Below</h3>
               <form onSubmit={this.handleFormSubmit}>
                 <input
                   name="searchTerm"
@@ -87,7 +87,7 @@ class Search extends Component {
                   className="btn btn-block btn-success"
                   onClick={this.handleFormSubmit}
                 >
-                  Search for book.
+                  Search Google
                 </button>
               </form>
             </div>
@@ -95,7 +95,7 @@ class Search extends Component {
             {/* begin book result section */}
             <div className="col-12 col-sm-6 col-md-9">
               {!this.state.bookList.length ? (
-                <h2 className="text-center">Search For a Book</h2>
+                <h2 className="text-center">Book Results</h2>
               ) : (
                 <React.Fragment>
                   <h3>Search Results for: {this.state.searchTerm}</h3>

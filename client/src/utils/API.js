@@ -13,10 +13,10 @@ export default {
   deleteBook(Id) {
     return axios.delete(`/api/books./${Id}`);
   },
-  searchGoogleBooks(bookQueryURL) {
-    return axios.get("https://gogleapis.com/books/v1/volumes", {
+  searchGoogleBooks(bookQuery) {
+    return axios.get("https://googleapis.com/books/v1/volumes", {
       params: {
-        q: bookQueryURL
+        q: bookQuery
       }
     });
   }

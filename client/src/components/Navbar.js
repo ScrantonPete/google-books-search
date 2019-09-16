@@ -1,11 +1,11 @@
 import React from "react";
-import { Link, NavLink } from "reactor-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = props => {
   return (
     <div className="navbar navbar-light bg-dark">
       <Link to="/" className="navbar-brand">
-        Guggle Book Search
+        Google Book Search
       </Link>
       <nav className="d-flex ml-auto">
         <NavLink
@@ -26,3 +26,4 @@ const Navbar = props => {
     </div>
   );
 };
+export default Navbar;
